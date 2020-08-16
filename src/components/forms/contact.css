@@ -1,0 +1,45 @@
+.form_style{
+    background-color: #a9ba9d;
+    width: 1000px;
+    display: inline-block;
+    margin-bottom: 100px;
+    margin-top:100px;
+    border-radius: 10px;
+}
+
+.header1{
+    width: 100%; 
+    overflow: hidden; 
+    height: 400px;
+    display: flex;
+    position: sticky;
+    position: center;
+    margin-top: sticky; 
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 5vw));
+    border-color: solid black;
+}
+
+.background_pic{
+    justify-content: center;
+    position: center;
+    height: 500px;
+    width: 100%; 
+    margin-top: -110px;
+}
+
+
+
+.labels{
+    margin-left:-800px;
+}
+.form_input{
+    width: 800px;
+    margin-left:100px;
+}
+.form_submit{
+    margin-bottom: 20px;
+}
+.form_body{
+    text-align: center;
+    background-color:white;
+}

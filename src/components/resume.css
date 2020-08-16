@@ -1,0 +1,55 @@
+.header1{
+    width: 100%; 
+    overflow: hidden; 
+    height: 400px;
+    display: flex;
+    position: sticky;
+    position: center;
+    margin-top: sticky; 
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 5vw));
+    border-color: solid black;
+}
+
+.resume_body{
+    text-align: center;
+    background-color:white;
+    color: black;
+}
+
+.form_style{
+    background-color: white;
+    width: 1000px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top:20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.button_style{
+    width: 300px;
+    color:white;
+    background-color: black;
+    margin-left:300px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top:20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.resume_title{
+    size: 25px;
+    margin-top:-60px;
+    margin-left:-1100px;
+}
+
+.background_pic{
+    justify-content: center;
+    position: center;
+    height: 500px;
+    width: 100%; 
+    margin-top: -110px;
+}
+
+
