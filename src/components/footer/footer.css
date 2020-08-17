@@ -96,12 +96,13 @@
 }
   
 .handle_text_r{
+    
     margin-top: 20px;
     margin-bottom: 19px;
     color:white;
     text-align: justify; 
-    margin-left: 0px;
-    margin-right: 30px;
+    margin-left: 40px;
+    
 }
   
 .link_stylez:hover{
