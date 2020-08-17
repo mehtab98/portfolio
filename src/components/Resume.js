@@ -107,15 +107,17 @@ const Resume = () => {
                 </Card.Header>
                 <Accordion.Collapse eventKey="2">
                 <Card.Body>
-                    <div className="innerCol"> 
-                        <p className="form_style"> <h4>Proficient Languages:</h4>JavaScript, Python, Java, Swift, & C++</p>
-                        <p className="form_style"> <h4>Backend Frameworks: </h4>Node.JS, Django, & Swift</p>
-                        <p className="form_style"> <h4>Databases:</h4>SQL (sqlite3), MS SQL Server, & NoSQL (Mongo DB)</p>
-                        <p className="form_style"> <h4>Cloud Deployments:</h4>Heroku, AWS, IBM Bluemix,Github</p>
+                    <div className="innerRow">
+                        <div className="innerCol"> 
+                            <p className="form_style"> <h4>Proficient Languages:</h4>JavaScript, Python, Java, Swift, & C++</p>
+                            <p className="form_style"> <h4>Backend Frameworks: </h4>Node.JS, Django, & Swift</p>
+                            <p className="form_style"> <h4>Databases:</h4>SQL (sqlite3), MS SQL Server, & NoSQL (Mongo DB)</p>
+                            <p className="form_style"> <h4>Cloud Deployments:</h4>Heroku, AWS, IBM Bluemix,Github</p>
+                        </div>
+                        <div className="innerCol2"> 
+                            <BackGraph/> 
+                        </div> 
                     </div>
-                    <div className="innerCol"> 
-                        <BackGraph/> 
-                    </div> 
                 </Card.Body>
                 </Accordion.Collapse>
             </Card>
@@ -128,14 +130,18 @@ const Resume = () => {
                 <Accordion.Collapse eventKey="3">
                 <Card.Body>
                     <div className="innerRow"> 
-                    <div className="innerCol"> 
-                        <p className="form_style"> <h4>Frontend Frameworks:</h4>HTML5, React, Angular, & Swift</p>
-                        <p className="form_style"> <h4>Package Familarity: </h4>Redux, GraphQL, Bootstrap, & D3</p>
-                        <p className="form_style"> <h4>CSS Tools:</h4>Bootstrap, UIkit, Materialize, Semantic UI, & Flexbox</p>
-                    </div>
-                    <div className="innerCol"> 
-                        <Graph/> 
-                    </div> 
+                        <div className="innerCol"> 
+                            <div className="side1"> 
+                                <p className="form_style"> <h4>Frontend Frameworks:</h4>HTML5, React, Angular, & Swift</p>
+                                <p className="form_style"> <h4>Package Familarity: </h4>Redux, GraphQL, Bootstrap, & D3</p>
+                                <p className="form_style"> <h4>CSS Tools:</h4>Bootstrap, UIkit, Materialize, Semantic UI, & Flexbox</p>
+                            </div> 
+                        </div>
+                        <div className="innerCol2"> 
+                         
+                                <Graph /> 
+                        
+                        </div> 
                     </div>
                 </Card.Body>
                 </Accordion.Collapse>

@@ -4,7 +4,8 @@ import './footer.css'
 
 import {Link} from 'react-router-dom'; 
 
-
+import {DiGithub} from 'react-icons/di';
+import {FaLinkedinIn} from "react-icons/fa";
 
 
 
@@ -26,12 +27,11 @@ function website_footer() {
           <div className="footer_column"> 
             <h4 className="handle_text_r">Quick Links</h4>
             <ul className="footer_links">
-              <Link  to='/shop'>
-                <li className="link_stylez">Github</li>
-              </Link>
-              <Link  to='/about'>
-                <li className="link_stylez">Linkedin</li>
-              </Link>
+             
+                <li className="link_stylez"> <a href="https://github.com/mehtab98" className="link_stylez">Github</a><DiGithub/></li>
+
+                <li className="link_stylez"> <a href="https://www.linkedin.com/in/mehtab-randhawa-a83786177" className="link_stylez">Linkedin</a> <FaLinkedinIn/></li>
+                
               <Link  to='/resume'>
                 <li className="link_stylez">Resume</li>
               </Link> 

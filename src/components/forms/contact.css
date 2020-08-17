@@ -10,7 +10,7 @@
 .header1{
     width: 100%; 
     overflow: hidden; 
-    height: 400px;
+    height: 500px;
     display: flex;
     position: sticky;
     position: center;
@@ -18,7 +18,12 @@
     clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 5vw));
     border-color: solid black;
 }
-
+.iconlink:hover{
+    color:gray;
+}
+.iconlink{
+    color:black;
+}
 .background_pic{
     justify-content: center;
     position: center;
@@ -37,9 +42,12 @@
     margin-left:100px;
 }
 .form_submit{
+    margin-top:18px;
     margin-bottom: 20px;
+    margin-left:420px;
 }
 .form_body{
     text-align: center;
+    margin-top:-25px;
     background-color:white;
 }
