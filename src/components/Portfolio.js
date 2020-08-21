@@ -210,9 +210,11 @@ const Portfolio = () => {
                     <Figure.Caption className="portfolio_desc">
                       Applying Linear regression on UC Irvines Machine Learning
                       car data set. The project was based on predicting the cars
-                      gas consumption based on the cars features. Furthermore,
+                      gas consumption based on the cars features.Finaly python
+                      scripts was able to apply linear regression with the car
+                      features to predict an accurate MPG. Furthermore, I
                       designed a report which can be found in the github
-                      repository.
+                      repository with data visualization.
                     </Figure.Caption>
                     <Figure.Caption style={{ marginTop: "25px" }}>
                       <Button
@@ -241,9 +243,10 @@ const Portfolio = () => {
                   <Figure className="post_layout">
                     <h3>Tweepy API visualization</h3>
                     <Figure.Caption className="portfolio_desc">
-                      Applied data visualization in python to twitter's API via
-                      Tweepy. Utilized Matplotlib and Pandas packages to apply
-                      data visualization to provide insight into tweets.
+                      Integrated twitter's API via Tweepy Library which gave me
+                      access to analytics on Tweets, and their social media
+                      exposure.I visualized the data with Matplotlib and Pandas
+                      packages to apply to help provide insight into tweets.
                     </Figure.Caption>
                   </Figure>
                 </div>

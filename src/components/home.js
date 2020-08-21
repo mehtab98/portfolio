@@ -38,7 +38,7 @@ const Home = () => {
           effects, animations, and creating a intuitive user experience. I am
           allways motivated in creating responsive & dynamic web applications. I
           enjoy partnering with global brands and emerging businesses to create
-          exciting and meaningful experiences on digital platforms.
+          a meaningful experiences on digital platforms.
         </p>
 
         <p id="home_section" className="form_style">
