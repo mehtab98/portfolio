@@ -19,11 +19,18 @@ class Contact extends React.Component{
     const {email, job, message } = this.state
     console.log("sending email");
 
-    let templateParams = {
+    let templateParam = {
       from_name: email,
       to_name: 'mrandhawa@ucdavis.edu',
       subject: job,
       message_html: message
+     }
+
+     let templateParams = {
+      from_name: "mehtabpro@outlook.com",
+      to_name: 'mrandhawa@ucdavis.edu',
+      subject: "front_end-job",
+      message_html: "this suksss"
      }
 
      emailjs.send(
