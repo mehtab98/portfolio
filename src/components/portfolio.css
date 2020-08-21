@@ -1,72 +1,137 @@
-.portfolio_desc{
-    margin-top:15px;
-    width: 800px;
+.portfolio_desc {
+  margin-top: 15px;
+  width: 800px;
+  text-align: left;
+  display: inline-block;
+}
+
+.portfolio_button {
+  margin-top: 15px;
+  width: 300px;
+  display: inline-block;
+}
+.innerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.innerCol {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.port_body {
+  text-align: center;
+  background-color: white;
+}
+
+.drop_style {
+  width: 1200px;
+  display: inline-block;
+}
+
+.form_style {
+  background-color: white;
+  width: 1000px;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.header1 {
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+  display: flex;
+  position: sticky;
+  position: center;
+  margin-top: sticky;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+  border-color: solid black;
+  margin-bottom: 15px;
+}
+.Port_title {
+  margin-top: -60px;
+  margin-left: -1100px;
+}
+.background_pic {
+  justify-content: center;
+  position: center;
+  height: 500px;
+  width: 100%;
+  margin-bottom: -1000px;
+}
+.post_layout {
+  margin-bottom: 88px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 420px) {
+  .headerStyle {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 95%);
+    max-width: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    background-size: cover;
+    position: relative;
+  }
+  .header_text {
+    color: white;
     text-align: left;
-    display: inline-block;
-}
+    font-size: 48px;
+  }
 
-.portfolio_button{
-    margin-top:15px;
-    width: 300px;
-    display: inline-block;
-}
-.innerRow{
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
-}
+  .img_1 {
+    max-width: 420px;
+    height: 100%;
+    margin-top: -100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 
-.innerCol{
-    width:600px;
-    display: flex; 
-    flex-direction: column;
-
-}
-.port_body{
+  .body_style {
     text-align: center;
-    background-color:white;
-}
-
-.drop_style{  
-    width: 1200px;
-    display: inline-block;
-}
-
-.form_style{
+    max-width: 300px;
+    margin-left: 40px;
+  }
+  .form_style {
     background-color: white;
-    width: 1000px;
+    max-width: 300px;
     display: inline-block;
-    margin-bottom: 30px;
-    margin-top:50px;
+    margin-bottom: 10px;
+    margin-top: 20px;
     border-radius: 10px;
     text-align: left;
-}
+  }
 
-.header1{
-    width: 100%; 
-    overflow: hidden; 
-    height: 400px;
+  .home_title {
+    text-align: right;
+    font-size: 30px;
+    width: 300px;
+    margin-left: -45px;
+    margin-top: 0px;
+  }
+  .card_style {
+    width: 1200px;
     display: flex;
-    position: sticky;
-    position: center;
-    margin-top: sticky; 
-    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 5vw));
-    border-color: solid black;
-    margin-bottom: 15px;
-
-}
-.Port_title{
-    margin-top:-60px;
-    margin-left:-1100px;
-}
-.background_pic{
-    justify-content: center;
-    position: center;
-    height: 500px;
-    width: 100%; 
-    margin-bottom: -1000px;
-}
-.post_layout{
-    margin-bottom:88px;
-    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+  .hero_text {
+    position: absolute;
+    width: 400px;
+    top: 33%;
+    left: 50%;
+    transform: translate(-180%, -25%);
+    color: white;
+  }
 }
