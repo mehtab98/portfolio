@@ -1,46 +1,33 @@
-.portfolio_desc {
-  margin-top: 15px;
-  width: 800px;
-  text-align: left;
-  display: inline-block;
+.portfolio_desc{
+    margin-top:15px;
+    width: 800px;
+    text-align: left;
+    display: inline-block;
 }
 
-.portfolio_button {
-  margin-top: 15px;
-  width: 300px;
-  display: inline-block;
+.portfolio_button{
+    margin-top:15px;
+    width: 300px;
+    display: inline-block;
 }
-.innerRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.innerCol {
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-}
-.port_body {
-  text-align: center;
-  background-color: white;
+.innerRow{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.drop_style {
-  width: 1200px;
-  display: inline-block;
+.innerCol{
+    width:600px;
+    display: flex; 
+    flex-direction: column;
+
+}
+.port_body{
+    text-align: center;
+    background-color:white;
 }
 
-.form_style {
-  background-color: white;
-  width: 1000px;
-  display: inline-block;
-  margin-bottom: 30px;
-  margin-top: 50px;
-  border-radius: 10px;
-  text-align: left;
-}
-
+<<<<<<< HEAD
 .header1 {
   width: 100%;
   overflow: hidden;
@@ -100,10 +87,19 @@
     margin-left: -200px;
   }
   .form_style {
+=======
+.drop_style{  
+    width: 1200px;
+    display: inline-block;
+}
+
+.form_style{
+>>>>>>> parent of ad22731... navbar temporary fix
     background-color: white;
-    max-width: 300px;
+    width: 1000px;
     display: inline-block;
     margin-bottom: 30px;
+<<<<<<< HEAD
     margin-top: 50px;
     border-radius: 10px;
     text-align: left;
@@ -157,4 +153,38 @@
   left: 50%;
   transform: translate(-180%, -25%);
   color: white;
+=======
+    margin-top:50px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.header1{
+    width: 100%; 
+    overflow: hidden; 
+    height: 400px;
+    display: flex;
+    position: sticky;
+    position: center;
+    margin-top: sticky; 
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 5vw));
+    border-color: solid black;
+    margin-bottom: 15px;
+
+>>>>>>> parent of ad22731... navbar temporary fix
+}
+.Port_title{
+    margin-top:-60px;
+    margin-left:-1100px;
+}
+.background_pic{
+    justify-content: center;
+    position: center;
+    height: 500px;
+    width: 100%; 
+    margin-bottom: -1000px;
+}
+.post_layout{
+    margin-bottom:88px;
+    text-align: center;
 }
