@@ -26,7 +26,7 @@ const Portfolio = () => {
           development into front-end and back-end development.{" "}
         </p>
         <Accordion defaultActiveKey="0">
-          <Card style={{ width: "1200px", display: "inline-block" }}>
+          <Card className="overall_card">
             <Card.Header
               style={{
                 width: "1200px",
@@ -144,7 +144,7 @@ const Portfolio = () => {
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card style={{ width: "1200px", display: "inline-block" }}>
+          <Card className="overall_card">
             <Card.Header
               style={{
                 width: "1200px",
