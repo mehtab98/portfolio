@@ -37,12 +37,12 @@
 
 @media only screen and (max-width: 420px) {
   .nav {
-    background-color: blue;
+    background-color: black;
   }
   .nav_align {
     display: hidden;
     justify-content: space-between;
     align-items: baseline;
-    background-color: orange;
+    background-color: black;
   }
 }
