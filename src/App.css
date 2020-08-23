@@ -1,7 +1,16 @@
-
-.App{
+.App {
   text-align: center;
   background-color: white;
 }
 
+.web_bar {
+  display: inline;
+  visibility: visible;
+}
 
+@media only screen and (max-width: 420px) {
+  .web_bar {
+    display: hidden;
+    visibility: hidden;
+  }
+}

@@ -13,11 +13,11 @@ const Home = () => {
           src={require("../images/header.jpg")}
           alt="About me"
         />
-
         <div className="hero_text">
           <h1 className="header_text">
-            Development Designed For The Digital World.{" "}
+            Development Designed For The Digital World.
             <Button
+              className="buttonVisible"
               href="#home_section"
               style={{ color: "white" }}
               variant="outline-secondary"
@@ -29,7 +29,7 @@ const Home = () => {
       </header>
 
       <body className="body_style">
-        <h1 className="home_title">Who's this guy</h1>
+        <h1 className="home_title">Who's this guy?</h1>
         <p className="form_style">
           I am a freelance web developer in Livermore, California. As a recent
           college graduate, I posess the skillsets of a Full-Stack developer.

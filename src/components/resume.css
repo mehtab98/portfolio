@@ -1,73 +1,191 @@
-.header1{
-    width: 100%; 
-    overflow: hidden; 
-    height: 400px;
-    display: flex;
-    position: sticky;
-    position: center;
-    margin-top: sticky; 
-    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 5vw));
-    border-color: solid black;
-}
- 
-.innerCol{
-    margin-top:40px;
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    width:30%
+.header1 {
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+  display: flex;
+  position: sticky;
+  position: center;
+  margin-top: sticky;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+  border-color: solid black;
 }
 
- 
-.innerCol2{
+.innerCol {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  width: 30%;
+}
+
+.innerCol2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  width: 70%;
+}
+.innerRow {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+}
+.resume_body {
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+.form_style {
+  background-color: white;
+  width: 1000px;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+.button_style {
+  width: 300px;
+  color: white;
+  background-color: black;
+  margin-left: 300px;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.resume_title {
+  size: 25px;
+  margin-top: -60px;
+  margin-left: -1100px;
+}
+
+.background_pic {
+  justify-content: center;
+  position: center;
+  height: 500px;
+  width: 100%;
+  margin-top: -110px;
+}
+.card_outsides {
+  color: black;
+  text-align: center;
+  margin-left: "-970px";
+}
+
+@media only screen and (max-width: 420px) {
+  .iframe_classic {
+    width: 250px;
+    height: 120px;
+    margin-right: 700px;
+  }
+  .frag_button {
+    visibility: hidden;
+  }
+  .fragment_button {
+    margin-top: 15px;
+    margin-right: 700px;
+  }
+  .portfolio_desc {
+    margin-top: 10px;
+    max-width: 250px;
+    text-align: left;
+    margin-right: 700px;
+    display: inline-block;
+  }
+
+  .card_fit {
+    display: inline-block;
+    width: 1200px;
+  }
+
+  .card_fit_other {
+    width: 1200px;
+    display: inline-block;
+    outline: black;
+  }
+  .headerStyle {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 95%);
+    max-width: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    padding: 0px;
-    width:70%
-}
-.innerRow{
-    max-width: 1200px;
-    display: flex; 
-    flex-direction: row; 
-}
-.resume_body{
+    background-size: cover;
+    position: relative;
+  }
+  .card_fit {
+    display: inline-block;
+    width: 300px;
+  }
+
+  .post_layout {
+    margin-bottom: 50px;
     text-align: center;
-    background-color:white;
+  }
+
+  .card_fit_other {
+    width: "300px";
+    display: "inline-block";
+    outline: "black";
+  }
+  .card_outsides {
     color: black;
-}
-.form_style{
+    text-align: center;
+    margin-left: -200px;
+  }
+  .img_1 {
+    max-width: 400px;
+    height: 100%;
+    margin-top: -100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .port_body {
+    text-align: center;
+    max-width: 300px;
+    margin-left: 40px;
+  }
+  .Port_title {
+    text-align: right;
+    margin-right: 200px;
+    margin-top: 10px;
+  }
+  .form_style {
     background-color: white;
-    width: 1000px;
+    max-width: 300px;
     display: inline-block;
     margin-bottom: 10px;
-    margin-top:20px;
+    margin-top: 20px;
     border-radius: 10px;
     text-align: left;
-}
-.button_style{
-    width: 300px;
-    color:white;
-    background-color: black;
-    margin-left:300px;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-top:20px;
-    border-radius: 10px;
-    text-align: center;
-}
+  }
+  .button_style {
+    margin-left: 0px;
+  }
+  .innerCol {
+    margin-top: 0px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
 
-.resume_title{
-    size: 25px;
-    margin-top:-60px;
-    margin-left:-1100px;
+  .innerCol2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 270px;
+    margin-left: -100px;
+    display: none;
+  }
+  .innerRow {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+  }
 }
-
-.background_pic{
-    justify-content: center;
-    position: center;
-    height: 500px;
-    width: 100%; 
-    margin-top: -110px;
-}
-
-

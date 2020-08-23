@@ -3,6 +3,7 @@ import { DiGithub } from "react-icons/di";
 import { Figure, Accordion, Card, Button } from "react-bootstrap";
 
 import "./portfolio.css";
+import { blockStatement } from "@babel/types";
 const Portfolio = () => {
   return (
     <>
@@ -26,16 +27,10 @@ const Portfolio = () => {
           development into front-end and back-end development.{" "}
         </p>
         <Accordion defaultActiveKey="0">
-          <Card className="overall_card">
-            <Card.Header
-              style={{
-                width: "1200px",
-                display: "inline-block",
-                outline: "black"
-              }}
-            >
+          <Card className="card_fit">
+            <Card.Header className="card_fit_other">
               <Accordion.Toggle
-                style={{ color: "black" }}
+                style={{ marginLeft: "-1000px", color: "black" }}
                 as={Button}
                 variant="link"
                 eventKey="0"
@@ -50,8 +45,7 @@ const Portfolio = () => {
                     <iframe
                       id="inlineFrameExample"
                       title="Inline Frame Example"
-                      width="1000"
-                      height="500"
+                      className="iframe_classic"
                       src="http://boons.io//"
                     ></iframe>
                     <Figure.Caption className="portfolio_desc">
@@ -65,7 +59,7 @@ const Portfolio = () => {
                       secure network for boons. This project was deployed with
                       IBM's Bluemix cloud.
                     </Figure.Caption>
-                    <Figure.Caption style={{ marginTop: "25px" }}>
+                    <Figure.Caption className="fragment_button">
                       <Button href="http://boons.io//" variant="secondary">
                         Visit Website
                       </Button>
@@ -76,8 +70,7 @@ const Portfolio = () => {
                     <iframe
                       id="inlineFrameExample"
                       title="Inline Frame Example"
-                      width="1000"
-                      height="500"
+                      className="iframe_classic"
                       src="http://www.zirasolutions.com/"
                     ></iframe>
                     <Figure.Caption className="portfolio_desc">
@@ -91,14 +84,16 @@ const Portfolio = () => {
                       Eventually this project was deployed with Heroku's cloud
                       platform.
                     </Figure.Caption>
-                    <Figure.Caption style={{ marginTop: "25px" }}>
+                    <Figure.Caption className="fragment_button">
                       <Button
                         href="http://www.zirasolutions.com/"
                         variant="secondary"
                       >
-                        Visit Website{" "}
+                        Visit Website
                       </Button>
+
                       <Button
+                        className="frag_button"
                         href="https://github.com/mehtab98/ziraSolution-"
                         variant="secondary"
                         style={{ marginLeft: "30px" }}
@@ -112,8 +107,7 @@ const Portfolio = () => {
                     <iframe
                       id="inlineFrameExample"
                       title="Inline Frame Example"
-                      width="1000"
-                      height="500"
+                      className="iframe_classic"
                       src="https://ktmuldoon.shinyapps.io/featurfy-spotify-track-analysis/"
                     ></iframe>
                     <Figure.Caption className="portfolio_desc">
@@ -124,7 +118,7 @@ const Portfolio = () => {
                       user interphase is being designed with React.JS as a MERN
                       stack. Project will soon be deployed online as a POC.
                     </Figure.Caption>
-                    <Figure.Caption style={{ marginTop: "25px" }}>
+                    <Figure.Caption className="fragment_button">
                       <Button
                         href="https://ktmuldoon.shinyapps.io/featurfy-spotify-track-analysis/"
                         variant="secondary"
@@ -132,6 +126,7 @@ const Portfolio = () => {
                         Visit Demo
                       </Button>
                       <Button
+                        className="frag_button"
                         href="https://github.com/mehtab98/spotify_visualizer"
                         variant="secondary"
                         style={{ marginLeft: "30px" }}
@@ -144,17 +139,12 @@ const Portfolio = () => {
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          
-          <Card className="overall_card">
-            <Card.Header
-              style={{
-                width: "1200px",
-                display: "inline-block",
-                outline: "black"
-              }}
-            >
+
+          <Card className="card_fit">
+            <Card.Header className="card_fit_other">
               <Accordion.Toggle
-                style={{ color: "black" }}
+                style={{ marginLeft: "-1000px", color: "black" }}
+                className="card_outside"
                 as={Button}
                 variant="link"
                 eventKey="1"
@@ -166,7 +156,7 @@ const Portfolio = () => {
               <Card.Body>
                 <div className="containter">
                   <Figure className="post_layout">
-                    <h3>Uber & Jump Bike API</h3>
+                    <h3 className="backend_title">Uber & Jump Bike API</h3>
                     <Figure.Caption className="portfolio_desc">
                       At my prior internship at Boons.io, my first immediate
                       project was to integrate Jump Bike API & Uber's API
@@ -175,7 +165,7 @@ const Portfolio = () => {
                       rates. These segments of code were part of Boon's ride
                       fare micro-service.
                     </Figure.Caption>
-                    <Figure.Caption style={{ marginTop: "25px" }}>
+                    <Figure.Caption className="fragment_button">
                       <Button
                         href="https://github.com/mehtab98/Boons"
                         variant="secondary"
@@ -186,7 +176,7 @@ const Portfolio = () => {
                   </Figure>
 
                   <Figure className="post_layout">
-                    <h3>Google Passport API</h3>
+                    <h3 className="backend_title">Google Passport API</h3>
                     <Figure.Caption className="portfolio_desc">
                       Worked with UC Davis students to design a yearbook
                       application for UC Davis Class of 2020. Helped hackathon
@@ -196,7 +186,7 @@ const Portfolio = () => {
                       React.JS. The following github repository links you to my
                       exact contributions on the project.
                     </Figure.Caption>
-                    <Figure.Caption style={{ marginTop: "25px" }}>
+                    <Figure.Caption className="fragment_button">
                       <Button
                         href="https://github.com/mehtab98/yearbook_passport/blob/master/server.js"
                         variant="secondary"
@@ -207,7 +197,9 @@ const Portfolio = () => {
                   </Figure>
 
                   <Figure className="post_layout">
-                    <h3>Machine Learning Assignment</h3>
+                    <h3 className="backend_title">
+                      Machine Learning Assignment
+                    </h3>
                     <Figure.Caption className="portfolio_desc">
                       Applying Linear regression on UC Irvines Machine Learning
                       car data set. The project was based on predicting the cars
@@ -217,7 +209,7 @@ const Portfolio = () => {
                       designed a report which can be found in the github
                       repository with data visualization.
                     </Figure.Caption>
-                    <Figure.Caption style={{ marginTop: "25px" }}>
+                    <Figure.Caption className="fragment_button">
                       <Button
                         href="https://github.com/mehtab98/LinearRegression/tree/master"
                         variant="secondary"
@@ -227,7 +219,7 @@ const Portfolio = () => {
                     </Figure.Caption>
                   </Figure>
                   <Figure className="post_layout">
-                    <h3>Scheduler Micro-Service</h3>
+                    <h3 className="backend_title">Scheduler Micro-Service</h3>
                     <Figure.Caption className="portfolio_desc">
                       Designed a micro-service for boons.io to help schedule any
                       pending orders with their driver’s schedules. Designed
@@ -242,7 +234,7 @@ const Portfolio = () => {
                     </Figure.Caption>
                   </Figure>
                   <Figure className="post_layout">
-                    <h3>Tweepy API visualization</h3>
+                    <h3 className="backend_title">Tweepy API visualization</h3>
                     <Figure.Caption className="portfolio_desc">
                       Integrated twitter's API via Tweepy Library which gave me
                       access to analytics on Tweets, and their social media

@@ -1,53 +1,81 @@
-.form_style{
-    background-color: #a9ba9d;
-    width: 1000px;
-    display: inline-block;
-    margin-bottom: 100px;
-    margin-top:100px;
-    border-radius: 10px;
+.form_style {
+  background-color: #a9ba9d;
+  width: 1000px;
+  display: inline-block;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  border-radius: 10px;
 }
 
-.header1{
-    width: 100%; 
-    overflow: hidden; 
-    height: 500px;
-    display: flex;
-    position: sticky;
-    position: center;
-    margin-top: sticky; 
-    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 5vw));
-    border-color: solid black;
+.header1 {
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+  display: flex;
+  position: sticky;
+  position: center;
+  margin-top: sticky;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+  border-color: solid black;
 }
-.iconlink:hover{
-    color:gray;
+.iconlink:hover {
+  color: gray;
 }
-.iconlink{
-    color:black;
+.iconlink {
+  color: black;
 }
-.background_pic{
-    justify-content: center;
-    position: center;
-    height: 500px;
-    width: 100%; 
-    margin-top: -110px;
+.background_pic {
+  justify-content: center;
+  position: center;
+  height: 500px;
+  width: 100%;
+  margin-top: -110px;
 }
 
+.labels {
+  margin-left: -800px;
+}
+.form_input {
+  width: 800px;
+  margin-left: 100px;
+}
+.form_submit {
+  margin-top: 18px;
+  margin-bottom: 20px;
+  margin-left: 420px;
+}
+.form_body {
+  text-align: center;
+  margin-top: -25px;
+  background-color: white;
+}
 
+.title_form {
+  margin-left: -800px;
+  margin-bottom: 0px;
+}
 
-.labels{
-    margin-left:-800px;
-}
-.form_input{
-    width: 800px;
-    margin-left:100px;
-}
-.form_submit{
-    margin-top:18px;
-    margin-bottom: 20px;
-    margin-left:420px;
-}
-.form_body{
+@media only screen and (max-width: 420px) {
+  .title_form {
+    margin-left: -200px;
+    margin-bottom: 0px;
+  }
+
+  .form_body {
     text-align: center;
-    margin-top:-25px;
-    background-color:white;
+    margin-top: -25px;
+    margin-left: -100px;
+    width: 350px;
+    background-color: white;
+  }
+  .form_input {
+    width: 300px;
+    margin-left: 100px;
+  }
+
+  .form_submit {
+    margin-top: 18px;
+    margin-bottom: 20px;
+    margin-left: 215px;
+  }
 }

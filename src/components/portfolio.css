@@ -53,10 +53,12 @@
   border-color: solid black;
   margin-bottom: 15px;
 }
+
 .Port_title {
   margin-top: -60px;
   margin-left: -1100px;
 }
+
 .background_pic {
   justify-content: center;
   position: center;
@@ -64,7 +66,115 @@
   width: 100%;
   margin-bottom: -1000px;
 }
+
 .post_layout {
   margin-bottom: 88px;
   text-align: center;
+}
+.card_fit {
+  display: inline-block;
+  width: 1200px;
+}
+.card_fit_other {
+  width: "1200px";
+  display: "inline-block";
+  outline: "black";
+}
+
+.card_outside {
+  color: black;
+}
+.iframe_classic {
+  width: 1000px;
+  height: 500px;
+}
+.fragment_button {
+  margin-top: 25px;
+}
+.frag_button {
+  visibility: visible;
+}
+
+@media only screen and (max-width: 420px) {
+  .iframe_classic {
+    width: 250px;
+    height: 120px;
+    margin-right: 700px;
+  }
+  .frag_button {
+    visibility: hidden;
+  }
+  .fragment_button {
+    margin-top: 15px;
+    margin-right: 700px;
+  }
+  .portfolio_desc {
+    margin-top: 10px;
+    max-width: 250px;
+    text-align: left;
+    margin-right: 700px;
+    display: inline-block;
+  }
+  .headerStyle {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 95%);
+    max-width: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    background-size: cover;
+    position: relative;
+  }
+  .card_fit {
+    display: inline-block;
+    width: 300px;
+  }
+
+  .post_layout {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .card_fit_other {
+    width: "300px";
+    display: "inline-block";
+    outline: "black";
+  }
+  .card_outside {
+    color: black;
+    text-align: center;
+    margin-left: -200px;
+  }
+  .img_1 {
+    max-width: 400px;
+    height: 100%;
+    margin-top: -100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .port_body {
+    text-align: center;
+    max-width: 300px;
+    margin-left: 40px;
+  }
+  .Port_title {
+    text-align: right;
+    margin-right: 200px;
+    margin-top: 10px;
+  }
+  .form_style {
+    background-color: white;
+    max-width: 300px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+
+  .backend_title {
+    margin-left: 0px;
+    width: 250px;
+  }
 }

@@ -8,7 +8,9 @@
   background-size: cover;
   position: relative;
 }
-
+.header_text_m {
+  display: none;
+}
 .img_1 {
   width: 100%;
   height: 100%;
@@ -89,7 +91,9 @@
 .cards:hover {
   border-color: black;
 }
-
+.buttonVisible {
+  visibility: visible;
+}
 @media only screen and (max-width: 420px) {
   .headerStyle {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 95%);
@@ -101,10 +105,13 @@
     background-size: cover;
     position: relative;
   }
+  .header_text_m {
+    visibility: visible;
+  }
   .header_text {
     color: white;
     text-align: left;
-    font-size: 48px;
+    font-size: 19px;
   }
 
   .img_1 {
@@ -147,12 +154,14 @@
     margin-top: 25px;
     margin-left: 20px;
   }
+  .buttonVisible {
+    visibility: hidden;
+  }
   .hero_text {
     position: absolute;
-    width: 400px;
-    top: 33%;
-    left: 50%;
-    transform: translate(-180%, -25%);
+    max-width: 180px;
+    margin-top: 15px;
+    margin-left: 120px;
     color: white;
   }
 }
@@ -178,6 +187,12 @@
     position: relative;
   }
 
+  .header_text_m {
+    visibility: visible;
+    margin-bottom: 1000px;
+    margin-left: 10px;
+    color: orange;
+  }
   .home_text {
     display: inline-block;
     width: 1400px;
@@ -202,10 +217,14 @@
 
   .hero_text {
     position: absolute;
-    width: 400px;
-    top: 33%;
-    left: 50%;
-    transform: translate(-180%, -25%);
+    max-width: 200px;
     color: white;
+    margin-left: 100px;
+  }
+
+  .header_text {
+    color: white;
+    text-align: left;
+    font-size: 10px;
   }
 }

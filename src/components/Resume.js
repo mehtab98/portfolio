@@ -50,21 +50,16 @@ const Resume = () => {
 
           <p className="form_style">
             <Button className="button_style" variant="dark" href={pdf}>
-              Resume Download
+              Download Resume
             </Button>
           </p>
         </div>
 
         <Accordion defaultActiveKey="1">
-          <Card style={{ width: "1200px", display: "inline-block" }}>
-            <Card.Header
-              style={{
-                width: "1200px",
-                display: "inline-block",
-                outline: "black"
-              }}
-            >
+          <Card className="card_fit">
+            <Card.Header className="card_fit_other">
               <Accordion.Toggle
+                className="card_outsides"
                 style={{ marginLeft: "-1000px", color: "black" }}
                 as={Button}
                 variant="link"
@@ -79,15 +74,10 @@ const Resume = () => {
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card style={{ width: "1200px", display: "inline-block" }}>
-            <Card.Header
-              style={{
-                width: "1200px",
-                display: "inline-block",
-                outline: "black"
-              }}
-            >
+          <Card className="card_fit">
+            <Card.Header className="card_fit_other">
               <Accordion.Toggle
+                className="card_outsides"
                 style={{ marginLeft: "-1000px", color: "black" }}
                 as={Button}
                 variant="link"
@@ -154,15 +144,10 @@ const Resume = () => {
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card style={{ width: "1200px", display: "inline-block" }}>
-            <Card.Header
-              style={{
-                width: "1200px",
-                display: "inline-block",
-                outline: "black"
-              }}
-            >
+          <Card className="card_fit">
+            <Card.Header className="card_fit_other">
               <Accordion.Toggle
+                className="card_outsides"
                 style={{ marginLeft: "-970px", color: "black" }}
                 as={Button}
                 variant="link"
@@ -202,15 +187,10 @@ const Resume = () => {
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card style={{ width: "1200px", display: "inline-block" }}>
-            <Card.Header
-              style={{
-                width: "1200px",
-                display: "inline-block",
-                outline: "black"
-              }}
-            >
+          <Card className="card_fit">
+            <Card.Header className="card_fit_other">
               <Accordion.Toggle
+                className="card_outsides"
                 style={{ marginLeft: "-970px", color: "black" }}
                 as={Button}
                 variant="link"
