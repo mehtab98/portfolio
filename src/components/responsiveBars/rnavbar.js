@@ -11,7 +11,7 @@ const Navigation = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0px 100px 0;
-  height: 88px;
+  height: 70px;
   margin-bottom: -10px;
   background: black;
 
@@ -94,8 +94,6 @@ const Navigation = styled.header`
     }
   }
   @media only screen and (max-width: 600px) {
-    height: auto;
-    min-height: 50px;
     display: block;
     position: relative;
     .logo {
@@ -111,8 +109,8 @@ const Navigation = styled.header`
     .fa-bars {
       display: inline-block;
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 20px;
+      right: 20px;
       cursor: pointer;
     }
     ul.collapsed {
@@ -134,8 +132,10 @@ const Navigation = styled.header`
       transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 
       &.is-expanded {
+        margin-top: -18px;
         overflow: hidden;
         max-height: 500px; /* approximate max height */
+        background-color: black;
         -moz-transition-duration: 0.4s;
         -webkit-transition-duration: 0.4s;
         -o-transition-duration: 0.4s;
