@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navbar from "./components/navbar/Navbar";
+import Nav from "./components/responsiveBars/rnavbar";
 import "./App.css";
 
 import { BrowserRouter, Route } from "react-router-dom";
@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Navbar className="web_bar" />
+          <Nav />
           <Route exact path="/" component={Home} />
           <Route exact path="/resume" component={Resume} />
           <Route path="/portfolio" component={Portfolio} />
